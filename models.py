@@ -47,6 +47,8 @@ def createCSV():
     with open('outputs\Inventory.csv', 'w') as myEmptyCSV:
         writer = csv.writer(myEmptyCSV)
 
+        writer.writerow(['ID', 'Item Name', 'Amount Remaining'])
+
         for item in items:
             writer.writerow(item)
 
