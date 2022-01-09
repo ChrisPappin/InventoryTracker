@@ -44,7 +44,7 @@ def createCSV():
     #GET all data from db
     items = getItems()
 
-    with open('outputs\Inventory.csv', 'w', newline='') as myEmptyCSV:
+    with open('Inventory.csv', 'w', newline='') as myEmptyCSV:
         writer = csv.writer(myEmptyCSV)
 
         writer.writerow(['ID', 'Item Name', 'Amount Remaining'])

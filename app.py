@@ -45,7 +45,7 @@ def edit(id):
 def getCSV():
     createCSV()
     
-    return send_file('outputs\Inventory.csv',
+    return send_file('Inventory.csv',
                      mimetype='text\csv',
                      attachment_filename='Inventory.csv',
                      as_attachment=True)
