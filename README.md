@@ -11,13 +11,13 @@ $ cd InventoryTracker
 Create the virtual environment and install the depencies:
 ```
 $ python -m venv myenv  # use `virtualenv env` for Python2, use `python3 ...` for Python3 on Linux & macOS
-$ source env\Scripts\activate #myenv/bin/activate for non-Windows
+$ myenv\Scripts\activate #myenv/bin/activate for non-Windows
 $ pip install -r requirements.txt
 ```
 
 Generate fake data and run:
 ```
-$ flask forge
+$ sqlite3 database.db < schema.sql
 $ flask run
 * Running on http://127.0.0.1:5000/
 ```
