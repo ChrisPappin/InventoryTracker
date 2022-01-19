@@ -15,7 +15,7 @@ $ myenv\Scripts\activate #myenv/bin/activate for non-Windows
 $ pip install -r requirements.txt
 ```
 
-Generate fake data and run:
+Create the database and run:
 ```
 $ sqlite3 database.db < schema.sql
 $ flask run
