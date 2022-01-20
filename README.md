@@ -11,6 +11,10 @@ Clone the repo:
 $ git clone https://github.com/ChrisPappin/InventoryTracker.git
 $ cd InventoryTracker
 ```
+Install virtualenv using pip if you do not have it:
+```
+$ pip install virtualenv
+```
 
 Create the virtual environment and install the depencies:
 ```
