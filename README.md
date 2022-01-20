@@ -15,7 +15,7 @@ $ cd InventoryTracker
 Create the virtual environment and install the depencies:
 ```
 $ python -m venv myenv  # use `virtualenv env` for Python2, use `python3 ...` for Python3 on Linux & macOS
-$ myenv\Scripts\activate #myenv/bin/activate for non-Windows
+$ myenv\Scripts\activate # use `source myenv/bin/activate` for non-Windows
 $ pip install -r requirements.txt
 ```
 
