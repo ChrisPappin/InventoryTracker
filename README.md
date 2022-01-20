@@ -1,6 +1,8 @@
 # InventoryTracker
 A simple inventory tracking web application for a logistics company. 
 
+![image](https://user-images.githubusercontent.com/45044493/150242067-26b3c179-edb2-424d-a65f-866f8a2cdf0e.png)
+
 ## Installation
 Clone the repo:
 ```
