@@ -5,6 +5,7 @@ import os
 
 app = Flask(__name__) #create server object
 
+#allow CORS for all domains on all routes
 CORS(app)
 
 @app.route('/', methods=['GET','POST'])
@@ -25,7 +26,9 @@ def index():
 @app.route('/delete/<int:id>', methods=['POST'])
 def delete(id):
     deleteItem(id)
-    return redirect(url_for('index')) #return to home page
+
+    #return to home page
+    return redirect(url_for('index'))
 
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit(id):
@@ -38,7 +41,6 @@ def edit(id):
         return redirect(url_for('index'))
 
     item=getOneItem(id)
-    print(item)
 
     return render_template('edit.html',item=item)
 
@@ -53,4 +55,4 @@ def getCSV():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

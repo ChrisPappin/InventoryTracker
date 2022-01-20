@@ -1,5 +1,7 @@
 # InventoryTracker
-A simple inventory tracking web application for a logistics company. 
+A simple inventory tracking web application for a logistics company. Built using Python and Flask. 
+
+You will need to have Python 3 installed to run this application. 
 
 ![image](https://user-images.githubusercontent.com/45044493/150242067-26b3c179-edb2-424d-a65f-866f8a2cdf0e.png)
 

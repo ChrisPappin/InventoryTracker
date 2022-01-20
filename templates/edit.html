@@ -1,5 +1,19 @@
-<h1>Edit Item</h1>
-<form method='post'>
-    <input type ='number' placeholder='New Amount' name='new amount' autocompplete='off' required value='{{item[2]}}'>
-    <input class='btn' type='submit' name='submit' value='Update'>
-</form>
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale-1.0'> <!--tells devices to start with scale of 1*/-->
+        <meta name='description' content='Edit a selected item.'>
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel='stylesheet' href="{{url_for('static', filename='style.css')}}" type='text/css'>
+        <title>Inventory Tracker</title>
+    </head>
+    <body>
+        <h1>Edit Item</h1>
+        <form method='post'>
+            <input type ='number' placeholder='New Amount' name='new amount' autocompplete='off' required value='{{item[2]}}'>
+            <input class='btn' type='submit' name='submit' value='Update'>
+        </form>
+    </body>
+</html>
